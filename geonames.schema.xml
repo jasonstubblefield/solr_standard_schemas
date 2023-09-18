@@ -57,12 +57,23 @@
 
 -->
 <field name="id" type="string" indexed="true" stored="true" multiValued="false" required="true"/>
+<field name="geonameid" type="pint" indexed="true" stored="true" multiValued="false" required="true"/>
 <field name="name" type="string" indexed="true" stored="true" multiValued="false"/>
 <field name="asciiname" type="text_general" indexed="true" stored="true" multiValued="false"/>
 <field name="alternatenames" type="text_general" indexed="true" stored="true" multiValued="true"/>
 <field name="latitude" type="pfloat" indexed="true" stored="true" multiValued="false"/>
 <field name="longitude" type="pfloat" indexed="true" stored="true" multiValued="false"/>
 <field name="location"       type="location"     indexed="true" stored="true"/>
+<field name="featureClass" type="string" indexed="true" stored="true" multiValued="false"/>
+<field name="featureCode" type="string" indexed="true" stored="true" multiValued="false"/>
+<field name="countryCode" type="string" indexed="true" stored="true" multiValued="false"/>
+<field name="cc2" type="string" indexed="true" stored="true" multiValued="false"/>
+<field name="admin1Code" type="string" indexed="true" stored="true" multiValued="false"/>
+<field name="admin2Code" type="string" indexed="true" stored="true" multiValued="false"/>
+<field name="admin3Code" type="string" indexed="true" stored="true" multiValued="false"/>
+<field name="admin4Code" type="string" indexed="true" stored="true" multiValued="false"/>
+<field name="population" type="plong" indexed="true" stored="true" multiValued="false"/>
+<field name="elevation" type="plong" indexed="true" stored="true" multiValued="false"/>
 <!--
  docValues are enabled by default for long type so we don't need to index the version field
 -->

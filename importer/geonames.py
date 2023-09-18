@@ -20,20 +20,23 @@ with open(geonames_file_path, 'r', encoding='utf-8') as file:
         # This is a basic mapping and might need adjustments based on your exact schema
         doc = {
             'id': row[0],
+            'geonameid': row[0],
             'name': row[1],
             # 'asciiname': row[2],
             # 'alternatenames': row[3].split(','),
             'latitude': float(row[4]),
             'longitude': float(row[5]),
-            # 'featureClass': row[6],
-            # 'featureCode': row[7],
-            # 'countryCode': row[8],
-            # 'population': int(row[14]),
-            # 'elevation': int(row[15]) if row[15] else None,
-            # 'admin1Code': row[10],
-            # 'admin2Code': row[11],
-            # 'admin3Code': row[12],
-            # 'admin4Code': row[13],
+            'featureClass': row[6],
+            'featureCode': row[7],
+            'countryCode': row[8],
+            'cc2': row[9],
+            'admin1Code': row[10],
+            'admin2Code': row[11],
+            'admin3Code': row[12],
+            'admin4Code': row[13],
+            'population': int(row[14]),
+            'elevation': int(row[15]) if row[15] else 0,
+
             'location': f"{row[4]},{row[5]}"
         }
 
