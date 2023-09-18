@@ -62,7 +62,4 @@ To this:
 
 Restart the solr core:
 
-`curl 'http://localhost:8983/solr/admin/cores?action=RELOAD&core=YOUR_CORE_NAME'
-`
-# solr_standard_schemas
-# solr_standard_schemas
+`curl 'http://localhost:8983/solr/admin/cores?action=RELOAD&core=YOUR_CORE_NAME'`
